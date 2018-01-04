@@ -1,7 +1,7 @@
 import { promisify } from 'util';
 import * as Translator from 'google-translate';
 
-const translator = Translator(process.env.TRANSLATE_API_KEY);
+const translator = Translator(process.env.API_KEY);
 translator.translatePromise = promisify(translator.translate);
 translator.detectLanguagePromise = promisify(translator.detectLanguage);
 
