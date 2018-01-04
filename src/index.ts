@@ -1,4 +1,4 @@
-import * as SlackBot from 'slackbots';
+import SlackBot from './SlackBot';
 import initialize from './initialize';
 
 const slackBot = new SlackBot({
