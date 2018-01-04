@@ -1,0 +1,27 @@
+{
+  "name": "slack-google-translate-bot",
+  "version": "0.0.0",
+  "description": "Slack Bot Google Translate Integration",
+  "main": "src/index.js",
+  "author": "Minkyu Cho (mrnoname@naver.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pitzcarraldo/slack-google-translate-bot.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/tslint -p tslint.json && ./node_modules/.bin/tsc",
+    "start": "ts-node -P -r dotenv/config src/index"
+  },
+  "dependencies": {
+    "dotenv": "4.0.0",
+    "google-translate": "2.0.5",
+    "slackbots": "1.1.0",
+    "ts-node": "4.1.0",
+    "typescript": "2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "8.5.5",
+    "tslint": "5.8.0"
+  }
+}
